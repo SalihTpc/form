@@ -45,6 +45,8 @@ btn.addEventListener("click", () => {
       "<br>" +
       "Mail Adresi:" +
       mail,
-  }).then((msg) => alert("The email successfully sent"));
-  inputs.elements["mail"].value = "";
+  }).then((msg) => {
+    alert("The email successfully sent");
+    inputs.elements["mail"].value = "";
+  });
 });
