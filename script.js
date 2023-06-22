@@ -23,7 +23,7 @@ btn.addEventListener("click", () => {
     Password: "400E434711073A0AF1942DFB608A5D8F6A15",
     To: mailAddress,
     From: mailAddress,
-    Subject: "Contact Us Query By the Customer",
+    Subject: "itnoya.com için hazırlanmıştır.",
     Body:
       "Marka Tercihi: " +
       marka +
