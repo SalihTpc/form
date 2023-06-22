@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form class="container" onsubmit="return false">
+      <div class="item">
+        <label for="marka">Marka Tercihiniz:</label>
+        <select id="marka" name="marka">
+          <option value="HPE">HPE</option>
+          <option value="Dell">Dell</option>
+          <option value="Lenovo">Lenovo</option>
+        </select>
+      </div>
+      <div class="item">
+        <label for="hdd">Hdd tipini seçiniz:</label>
+        <select id="hdd" name="hdd">
+          <option value="SSD">SSD</option>
+          <option value="SAS">SAS</option>
+        </select>
+      </div>
+      <div class="item">
+        <label for="ram">Ram boyutunu seçiniz:</label>
+        <select id="ram" name="ram">
+          <option value="16GB">16GB</option>
+          <option value="32GB">32GB</option>
+          <option value="64GB">64GB</option>
+          <option value="128GB">128GB</option>
+          <option value="256GB">256GB</option>
+          <option value="512GB">512GB</option>
+          <option value="1024GB">1024GB</option>
+        </select>
+      </div>
+      <div class="item">
+        <label for="core"
+          >İşlemci boyutunu seçiniz (Fiziksel core sayısı):</label
+        >
+        <select id="core" name="core">
+          <option value="4core">4core</option>
+          <option value="8core">8core</option>
+          <option value="16core">16core</option>
+          <option value="24core">24core</option>
+          <option value="48core">48core</option>
+          <option value="96core">96core</option>
+          <option value="192core">192core</option>
+        </select>
+      </div>
+      <div class="item">
+        <label for="kabin">Koruyucu server kabini istiyor musunuz:</label>
+        <select id="kabin" name="kabin">
+          <option value="Evet">Evet</option>
+          <option value="Hayır">Hayır</option>
+        </select>
+      </div>
+      <div class="item">
+        <label for="kurulum">Kurulum istiyor musunuz:</label>
+        <select id="kurulum" name="kurulum">
+          <option value="Evet">Evet</option>
+          <option value="Hayır">Hayır</option>
+        </select>
+      </div>
+      <div class="item">
+        <label for="mail"
+          >Fiyat teklifi paylaşacağımız e-posta adresini iletiniz:</label
+        >
+        <input
+          type="email"
+          id="mail"
+          name="mail"
+          placeholder="E-Posta Adresiniz"
+          data-rule="email"
+          data-msg="E posta adresiniz boş olmamalı"
+        />
+      </div>
+      <div class="item mybutton">
+        <button type="submit" id="submit">Gönder</button>
+      </div>
+    </form>
+  </body>
+  <script src="script.js"></script>
+  <script src="smtp.js"></script>
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+</html>
