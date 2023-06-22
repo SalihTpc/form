@@ -7,7 +7,7 @@
     <title>Form</title>
   </head>
   <body>
-    <form class="container" onsubmit="return false">
+    <form class="container">
       <div class="item">
         <label for="marka">Marka Tercihiniz:</label>
         <select id="marka" name="marka">
@@ -68,12 +68,11 @@
           >Fiyat teklifi paylaşacağımız e-posta adresini iletiniz:</label
         >
         <input
+          required
           type="email"
           id="mail"
           name="mail"
           placeholder="E-Posta Adresiniz"
-          data-rule="email"
-          data-msg="E posta adresiniz boş olmamalı"
         />
       </div>
       <div class="item mybutton">
@@ -83,5 +82,4 @@
   </body>
   <script src="script.js"></script>
   <script src="smtp.js"></script>
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </html>
